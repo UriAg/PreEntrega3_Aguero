@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Buscando la veta, tienda online de productos en madera de olivo. Apartado de contacto">
+	<meta name="keywords" content="TIENDA, MADERA, MADERA DE OLIVO, OLIVO, CUOTAS, ENVÍO, CÓRDOBA, ARGENTINA, ARTESANÍA, ARTESANAL, TABLAS, COCINA, MUEBLES, BARATO, CARO">
+	<title>¡Contactanos! | Buscando la veta</title>
+	<!-- Window icon -->
+    <link rel="shortcut icon" href="../assets/BLV-Logo-removebg-previeww-copia.ico" type="image/x-icon">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../styles/contact/index.css">
+</head>
+
+<body>
+	<header id="header">
+		<nav id="nav">
+            <div class="mobile__nav">
+                <a href="#main"><img src="../assets/BLV-Logo-removebg-previeww.png" alt="Logo"></a>
+                <button class="btn__menu btn__menu--open" title="Abrir menú / Cerrar menú"></button>
+                <a class="mobile__logo" href="#main"><img src="../assets/BLV-Logo-removebg-previeww.png" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <li><a href="./about-us.html">Sobre nosotros</a></li>
+				<li><a href="#" class="active__page">Contactanos</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>
+            </ul>
+    	</nav>
+	</header>
+
+	<main id="main">
+		<h1>Buscando la veta</h1>
+		<section>
+			<article class="mail__container">
+				<h2 id="Contact">¡Envianos un correo!</h2>
+				<form class="footer__form" required="required">
+
+						<div class="NER-cont">
+							<label>
+								<input autocomplete="off" type="text" name="name" required="required">
+								<span>Nombre</span>
+							</label>
+							<label>
+								<!-- No pongo type='email' por que me rompe el efecto y ni ganas de agregar otra funcion más -->
+								<input autocomplete="off" type="text" name="email" required="required">
+								<span>Email</span>
+							</label>
+							<label>
+								<input autocomplete="off" type="text" name="issue" required="required">
+								<span>Razón</span>
+							</label>
+						</div>
+
+						<label>
+							<textarea autocomplete="off" type="text" class="message__input" name="message"
+								required="required"></textarea>
+							<span>Mensaje</span>
+						</label>
+
+						<label class="btn__label">
+							<button type="submit" name="btn__submit" title="Enviar email" class="submit__mail">Enviar</button>
+						</label>
+				</form>
+			</article>
+		</section>
+	</main>
+	<!-- JS -->
+	<script src="../app/contact.js"></script>
+</body>
+
+</html>

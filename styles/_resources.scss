@@ -1,0 +1,14 @@
+//Mixins
+@mixin flex($d:initial, $c:initial, $i:initial, $fd:initial){
+    display: $d;
+    justify-content: $c;
+    align-items: $i;
+    flex-direction: $fd;
+}
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+//Vars
+$--general-font: #ebebeb;
+$--title-font: 'Roboto', sans-serif;

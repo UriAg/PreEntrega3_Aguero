@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Buscando la veta, tienda online de productos en madera de olivo. Apartado de inicio de sesión">
+	<meta name="keywords" content="TIENDA, MADERA, MADERA DE OLIVO, OLIVO, CUOTAS, ENVÍO, CÓRDOBA, ARGENTINA, ARTESANÍA, ARTESANAL, TABLAS, COCINA, MUEBLES, BARATO, CARO">
+	<title>¡Inicia sesión!</title>
+	<link rel="stylesheet" href="../styles/login/index.css">
+	<!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="main">
+		<h1>Buscando la veta</h1>
+		<section class="user login__container active">
+			<article>
+				<h2>¡Inicia sesión!</h2>
+				<form>
+					<input type="email" placeholder="Email">
+					<input type="password" placeholder="Contraseña" autocomplete="none">
+					<input type="submit" placeholder="Iniciar sesión">
+				</form>
+				<div class="buttons">
+					<button type="button" id="forgot__password" title="Recuperar contraseña">¿Olvidaste tu contraseña?</button>
+					<button type="button" id="register__button" title="Crear una cuenta">¡Crea una cuenta!</button>
+				</div>
+			</article>
+		</section>
+
+		<section class="user register__container">
+			<article>
+				<h2>¡Registrate!</h2>
+				<form>
+					<input type="email" placeholder="Ingresa un email">
+					<input type="submit" placeholder="Enviar codigo">
+				</form>
+				<div class="buttons">
+					<button type="button" id="forgot__password" title="Recuperar contraseña">¿Olvidaste tu contraseña?</button>
+					<button type="button" id="login__button" title="Iniciar sesión">¿Ya tienes una cuenta? ¡Inicia sesión!</button>
+				</div>
+			</article>
+		</section>
+
+		<section class="user forgot__pass__container">
+			<article>
+				<h2>¡Recupera tu contraseña!</h2>
+				<form>
+					<input type="email" placeholder="Ingresa tu email">
+					<input type="submit" placeholder="Reestablecer">
+				</form>
+				<div class="buttons">
+					<button type="button" id="login__button" title="Iniciar sesión">¿Recordaste tu contraseña? ¡Inicia sesión!</button>
+					<button type="button" id="register__button" title="Crear una cuenta">¡Crea una cuenta!</button>
+				</div>
+			</article>
+		</section>
+		<a href="../index.html">Volver al inicio</a>
+	</main>
+
+	<script src="../app/login.js"></script>
+</body>
+
+</html>

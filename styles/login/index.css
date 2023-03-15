@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url("../../assets/contact/DSC_0002.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main {
+  width: 80%;
+  text-align: center;
+}
+body main h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  overflow-wrap: break-word;
+}
+body main section {
+  background-color: rgba(0, 0, 0, 0.4470588235);
+  padding: 2em 0 2em 0;
+  margin: 2em 0 1em 0;
+  transition: transform 0.3s ease;
+  height: 24em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+}
+body main section article {
+  width: 100%;
+}
+body main section article h2 {
+  margin-bottom: 1em;
+  color: #778054;
+  overflow-wrap: break-word;
+}
+body main section article form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section article form input {
+  padding: 0.5em;
+  margin-bottom: 2em;
+  width: 80%;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid #778054;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5137254902);
+  color: #fff;
+}
+body main section article form input::placeholder {
+  color: #fff;
+}
+body main section article form input:last-child {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: rgba(119, 128, 84, 0.5058823529);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body main section article form input:last-child:active {
+  background-color: rgba(89, 96, 62, 0.5058823529);
+  border-bottom: 1px solid rgba(89, 96, 62, 0.5058823529);
+}
+body main section article .buttons {
+  display: flex;
+  flex-direction: column;
+}
+body main section article .buttons button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.3em 0 0.3em 0;
+  color: #fff;
+  font-size: 1em;
+}
+body main section article .buttons button:first-of-type {
+  margin-bottom: 0.5em;
+}
+body main a {
+  display: inline-block;
+  overflow-wrap: break-word;
+  color: #778054;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4470588235);
+  padding: 0.5em;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 179px) {
+  body {
+    height: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

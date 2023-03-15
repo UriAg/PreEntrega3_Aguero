@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../assets/contact/DSC_0002.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: rgba(10, 10, 10, 0.831372549);
+}
+header nav .mobile__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: initial;
+}
+header nav .mobile__nav a img {
+  width: 4em;
+}
+header nav .mobile__nav .btn__menu {
+  width: 2em;
+  height: 2em;
+  font-size: 2.5em;
+  color: #ebebeb;
+  border: none;
+  background: none;
+}
+header nav .mobile__nav .btn__menu--open::before {
+  content: "☰";
+}
+header nav .mobile__nav .btn__menu--close::before {
+  content: "✕";
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: -500px;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  background-color: rgba(10, 10, 10, 0.831372549);
+  transition: all 1s ease;
+}
+header nav ul li {
+  height: 25%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  background-image: linear-gradient(to right, #e56b6b, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: all 0.3s ease;
+  color: #ebebeb;
+}
+header nav ul li a:hover, header nav ul li a:focus {
+  color: #ebebeb;
+  background-size: 100% 2px;
+}
+header nav ul li .active__page {
+  color: #dd6767;
+}
+header nav ul li .active__page:hover {
+  color: #dd6767;
+}
+header nav .active {
+  top: 5em;
+  border-top: 1px solid #054818;
+}
+
+main {
+  text-align: center;
+}
+main h1 {
+  color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+}
+main section .mail__container {
+  width: 100%;
+  padding-top: 2em;
+  margin-bottom: 2em;
+  background-color: rgba(38, 33, 33, 0.2862745098);
+  color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section .mail__container h2 {
+  color: rgb(196, 66, 30);
+  text-decoration: double;
+  font-family: "Lato", sans-serif;
+}
+main section .mail__container .footer__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: initial;
+  flex-direction: column;
+  margin-top: 1em;
+  width: 95%;
+}
+main section .mail__container .footer__form label {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 1em;
+  font-family: "Lato", sans-serif;
+}
+main section .mail__container .footer__form label span {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: all 0.3s ease;
+  cursor: text;
+}
+main section .mail__container .footer__form label input {
+  color: #fff;
+  font-size: 1em;
+  height: 2.5em;
+  padding: 15px 15px 10px 15px;
+  background: transparent;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+main section .mail__container .footer__form label input:valid + span {
+  color: #fff;
+  top: -10px;
+  font-size: 10px;
+  left: 5px;
+  padding: 0 0.3em 0 0.3em;
+}
+main section .mail__container .footer__form label input:focus + span {
+  color: #588B8B;
+}
+main section .mail__container .footer__form label textarea {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  resize: none;
+  padding: 15px 15px 0 15px;
+  background: transparent;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  height: 10em;
+}
+main section .mail__container .footer__form label textarea:valid + span {
+  color: #fff;
+  top: 0;
+  left: 5px;
+  font-size: 10px;
+  padding: 0 0.3em 0 0.3em;
+}
+main section .mail__container .footer__form label textarea:focus + span {
+  color: #588B8B;
+}
+main section .mail__container .footer__form label button {
+  height: 2.5em;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(196, 66, 30);
+  cursor: pointer;
+}
+main section .mail__container .footer__form label button:hover {
+  background-color: rgb(177, 52, 17);
+}
+main section .mail__container .footer__form .btn__label {
+  border: none;
+}
+main section .mail__container .footer__form .focus {
+  border-bottom: 1px solid #588B8B;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body header nav {
+    z-index: 99;
+    justify-content: space-between;
+    flex-direction: row;
+    background: none;
+  }
+  body header nav .mobile__nav {
+    width: auto;
+  }
+  body header nav .mobile__nav a {
+    margin-left: 3em;
+  }
+  body header nav .mobile__nav a img {
+    width: 5em;
+  }
+  body header nav .mobile__nav .btn__menu,
+  body header nav .mobile__nav .mobile__logo {
+    display: none;
+  }
+  body header nav ul {
+    width: auto;
+    height: auto;
+    position: static !important;
+    margin: 0 2em 0 0;
+    flex-direction: row;
+    background: none;
+  }
+  body header nav ul li {
+    display: inline-block;
+    margin: 0 0.5em 0 0.5em;
+  }
+  body header nav ul li a {
+    font-size: 1em;
+  }
+  body header nav ul li a:hover, body header nav ul li a:focus {
+    font-size: 1.1em;
+  }
+  body main section .mail__container .footer__form .NER-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main section .mail__container .footer__form .NER-cont label {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
