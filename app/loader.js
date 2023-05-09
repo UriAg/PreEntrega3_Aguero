@@ -1,6 +1,6 @@
 const loader = document.querySelector('.loader-container');
 
-document.addEventListener('DOMContentLoaded', function(){
+window.onload = function(){
     loader.style.visibility = 'hidden';
     loader.style.opacity = '0';
-})
+}
