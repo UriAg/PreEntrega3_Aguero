@@ -21,6 +21,35 @@ body {
   background-color: #ebebeb;
   color: #ebebeb;
 }
+body .loader-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 67, 104);
+  transition: all 1s ease;
+  z-index: 10000;
+}
+body .loader-container .loader {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+body .loader-container .loader:before, body .loader-container .loader:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+body .loader-container .loader:after {
+  box-shadow: 0 2px 0 #FF3D00 inset;
+  animation: loaderSpin 2s linear infinite;
+}
 body header {
   grid-area: header;
   width: 100%;
@@ -447,6 +476,14 @@ body footer .copyright h4 {
     -webkit-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0);
     -moz-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0);
     box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
